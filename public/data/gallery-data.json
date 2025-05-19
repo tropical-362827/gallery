@@ -9,22 +9,22 @@
           "id": "scene1",
           "title": "シーン1",
           "description": "美しい和室での一場面",
-          "displayImage": "/images/game1/scenes/display/sample-display.png",
-          "dataImage": "/images/game1/scenes/data/sample-scene.png"
+          "displayImage": "./images/game1/scenes/display/sample-display.png",
+          "dataImage": "./images/game1/scenes/data/sample-scene.png"
         },
         {
           "id": "scene2",
           "title": "シーン2",
           "description": "和室での別の場面",
-          "displayImage": "/images/game1/scenes/display/sample-display.png",
-          "dataImage": "/images/game1/scenes/data/sample-scene.png"
+          "displayImage": "./images/game1/scenes/display/sample-display.png",
+          "dataImage": "./images/game1/scenes/data/sample-scene.png"
         },
         {
           "id": "scene3",
           "title": "シーン3",
           "description": "和室での特別な場面",
-          "displayImage": "/images/game1/scenes/display/sample-display.png",
-          "dataImage": "/images/game1/scenes/data/sample-scene.png"
+          "displayImage": "./images/game1/scenes/display/sample-display.png",
+          "dataImage": "./images/game1/scenes/data/sample-scene.png"
         }
       ],
       "characters": [
@@ -32,25 +32,25 @@
           "id": "character1",
           "name": "キャラクター1",
           "description": "白髪の少女",
-          "image": "/images/game1/characters/sample-chara.png"
+          "image": "./images/game1/characters/sample-chara.png"
         },
         {
           "id": "character2",
           "name": "キャラクター2",
           "description": "白髪の少女・別ポーズ",
-          "image": "/images/game1/characters/sample-chara.png"
+          "image": "./images/game1/characters/sample-chara.png"
         },
         {
           "id": "character3",
           "name": "キャラクター3",
           "description": "白髪の少女・笑顔",
-          "image": "/images/game1/characters/sample-chara.png"
+          "image": "./images/game1/characters/sample-chara.png"
         },
         {
           "id": "character4",
           "name": "キャラクター4",
           "description": "白髪の少女・悲しい表情",
-          "image": "/images/game1/characters/sample-chara.png"
+          "image": "./images/game1/characters/sample-chara.png"
         }
       ]
     },
@@ -63,15 +63,15 @@
           "id": "scene1",
           "title": "シーン1",
           "description": "別の美しい和室での一場面",
-          "displayImage": "/images/game2/scenes/display/sample-display.png",
-          "dataImage": "/images/game2/scenes/data/sample-scene.png"
+          "displayImage": "./images/game2/scenes/display/sample-display.png",
+          "dataImage": "./images/game2/scenes/data/sample-scene.png"
         },
         {
           "id": "scene2",
           "title": "シーン2",
           "description": "別の和室での別の場面",
-          "displayImage": "/images/game2/scenes/display/sample-display.png",
-          "dataImage": "/images/game2/scenes/data/sample-scene.png"
+          "displayImage": "./images/game2/scenes/display/sample-display.png",
+          "dataImage": "./images/game2/scenes/data/sample-scene.png"
         }
       ],
       "characters": [
@@ -79,19 +79,19 @@
           "id": "character1",
           "name": "キャラクター1",
           "description": "白髪の少女・ゲーム2バージョン",
-          "image": "/images/game2/characters/sample-chara.png"
+          "image": "./images/game2/characters/sample-chara.png"
         },
         {
           "id": "character2",
           "name": "キャラクター2",
           "description": "白髪の少女・別ポーズ・ゲーム2バージョン",
-          "image": "/images/game2/characters/sample-chara.png"
+          "image": "./images/game2/characters/sample-chara.png"
         },
         {
           "id": "character3",
           "name": "キャラクター3",
           "description": "白髪の少女・笑顔・ゲーム2バージョン",
-          "image": "/images/game2/characters/sample-chara.png"
+          "image": "./images/game2/characters/sample-chara.png"
         }
       ]
     }
