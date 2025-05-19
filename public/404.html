@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Page not found</title>
+  <script>
+    // SPA用リダイレクト
+    const segment = 1;
+    const path = window.location.pathname;
+    
+    const url = window.location.protocol + '//' +
+                window.location.host +
+                window.location.pathname.split('/').slice(0, 1 + segment).join('/') +
+                '/#' +
+                window.location.pathname.slice(1);
+    
+    window.location.replace(url);
+  </script>
+</head>
+<body>
+  リダイレクト中...
+</body>
+</html>
