@@ -2,7 +2,7 @@ import { GalleryData, Game } from '../types/gallery';
 
 export async function fetchGalleryData(): Promise<GalleryData> {
   try {
-    const response = await fetch('/data/gallery-data.json');
+    const response = await fetch('./data/gallery-data.json');
     if (!response.ok) {
       throw new Error('Failed to fetch gallery data');
     }
