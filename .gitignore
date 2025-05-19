@@ -51,3 +51,6 @@ coverage
 .temp
 .tmp
 .cache
+
+# Claude
+.claude/
