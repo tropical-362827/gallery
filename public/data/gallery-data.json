@@ -36,14 +36,14 @@
         {
           "id": "scene5",
           "title": "銀河観測地点",
-          "description": "",
+          "description": "1万個の星の重みが、PCに負荷を与える",
           "displayImage": "images/svs/scenes/display/20241209191019511.png",
           "dataImage": "images/svs/scenes/data/2024_1109_0420_58_638.png"
         },
         {
           "id": "scene4",
           "title": "月光とダイオード",
-          "description": "",
+          "description": "ついつい夜ふかししてしまう女の子",
           "displayImage": "images/svs/scenes/display/20241028045559690.png",
           "dataImage": "images/svs/scenes/data/2024_1028_0452_18_929.png"
         },
