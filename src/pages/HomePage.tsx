@@ -156,9 +156,9 @@ export default function HomePage() {
   return (
     <>
       <Hero>
-        <HeroTitle>Tropical Trove</HeroTitle>
+        <HeroTitle>tropical trove</HeroTitle>
         <HeroDescription>
-          Xにて公開しているSSを置いておく場所です！
+          Xにて公開しているゲームのSSを置いておく場所です！
         </HeroDescription>
         <HeroDescription>
           画像をクリックしてシーン/キャラデータをダウンロードできます！

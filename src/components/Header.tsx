@@ -167,7 +167,7 @@ export default function Header() {
     <HeaderContainer>
       <HeaderContent>
         <LeftSection>
-          <Logo to="/" onClick={closeMenu}>Tropical Trove</Logo>
+          <Logo to="/" onClick={closeMenu}>tropical trove</Logo>
           <SocialLink
             href="https://x.com/tropical-362827"
             target="_blank"
