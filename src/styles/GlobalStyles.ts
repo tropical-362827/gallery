@@ -2,15 +2,16 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
   :root {
-    --primary-color: #6a3de8;
-    --secondary-color: #9b78fa;
-    --accent-color: #ff6b6b;
-    --background-color: #0f0f1a;
-    --surface-color: #1a1a2e;
-    --text-color: #e6e6fa;
-    --text-secondary-color: #b8b8d0;
-    --border-color: #2a2a40;
-    --shadow-color: rgba(0, 0, 0, 0.3);
+    /* 淡い色で明るいカラーパレット */
+    --primary-color: #ff9a8b;  /* 淡いサーモンピンク */
+    --secondary-color: #ffd384; /* 淡いオレンジイエロー */
+    --accent-color: #98ddca;   /* 淡いミントグリーン */
+    --background-color: #f9f7f7; /* 明るいオフホワイト */
+    --surface-color: #ffffff;   /* 純白 */
+    --text-color: #555555;      /* ダークグレー */
+    --text-secondary-color: #888888; /* ミディアムグレー */
+    --border-color: #e0e0e0;    /* ライトグレー */
+    --shadow-color: rgba(0, 0, 0, 0.05); /* 薄い影 */
     
     /* Spacing */
     --spacing-xs: 4px;
@@ -21,8 +22,10 @@ export const GlobalStyles = createGlobalStyle`
     --spacing-xxl: 48px;
     
     /* Fonts */
-    --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-heading: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+    --font-main: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-heading: 'Montserrat', 'Segoe UI', 'Roboto', sans-serif;
+    --font-title: 'Playfair Display', 'Times New Roman', serif;
+    --font-elegant: 'Lora', Georgia, serif;
   }
   
   * {
@@ -49,12 +52,12 @@ export const GlobalStyles = createGlobalStyle`
   }
   
   a {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     text-decoration: none;
     transition: color 0.2s ease;
     
     &:hover {
-      color: var(--primary-color);
+      color: var(--secondary-color);
     }
   }
   
@@ -73,6 +76,7 @@ export const GlobalStyles = createGlobalStyle`
   
   h1 {
     font-size: 2.5rem;
+    letter-spacing: 1px;
   }
   
   h2 {
@@ -94,11 +98,11 @@ export const GlobalStyles = createGlobalStyle`
   
   /* Scrollbar styling */
   ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
   }
   
   ::-webkit-scrollbar-track {
-    background: var(--surface-color);
+    background: var(--background-color);
   }
   
   ::-webkit-scrollbar-thumb {
@@ -107,7 +111,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: var(--secondary-color);
+    background: var(--primary-color);
   }
 `;
 

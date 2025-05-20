@@ -6,11 +6,12 @@ import { fetchGalleryData, getGamesForNavigation } from '../utils/galleryData';
 
 const HeaderContainer = styled.header`
   background-color: var(--surface-color);
-  box-shadow: 0 2px 10px var(--shadow-color);
+  box-shadow: 0 2px 15px var(--shadow-color);
   padding: var(--spacing-md) var(--spacing-lg);
   position: sticky;
   top: 0;
   z-index: 100;
+  border-bottom: 1px solid var(--border-color);
 `;
 
 const HeaderContent = styled.div`
@@ -28,8 +29,10 @@ const LeftSection = styled.div`
 `;
 
 const Logo = styled(Link)`
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1.4rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   color: var(--primary-color);
   margin-right: var(--spacing-sm);
   
@@ -96,10 +99,26 @@ const NavLink = styled(Link) <{ $isActive: boolean }>`
   padding: var(--spacing-xs) var(--spacing-sm);
   border-radius: 4px;
   transition: all 0.2s ease;
+  position: relative;
+  
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: ${({ $isActive }) => $isActive ? '70%' : '0'};
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+  }
   
   &:hover {
     color: var(--primary-color);
-    background-color: rgba(106, 61, 232, 0.1);
+    
+    &:after {
+      width: 70%;
+    }
   }
 `;
 
@@ -148,7 +167,7 @@ export default function Header() {
     <HeaderContainer>
       <HeaderContent>
         <LeftSection>
-          <Logo to="/" onClick={closeMenu}>TROPICAL TROVE</Logo>
+          <Logo to="/" onClick={closeMenu}>Tropical Trove</Logo>
           <SocialLink
             href="https://x.com/tropical-362827"
             target="_blank"
