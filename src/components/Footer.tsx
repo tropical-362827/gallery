@@ -20,12 +20,12 @@ const Copyright = styled.p`
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-  
+
   return (
     <FooterContainer>
       <FooterContent>
         <Copyright>
-          © {currentYear} ゲームギャラリー All Rights Reserved.
+          ハニカム/サマすくのデータの著作権はILLGAMESに帰属します。
         </Copyright>
       </FooterContent>
     </FooterContainer>
