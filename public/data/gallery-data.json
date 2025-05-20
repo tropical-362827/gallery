@@ -1,97 +1,160 @@
 {
   "games": [
     {
-      "id": "game1",
-      "title": "ゲーム1",
-      "description": "ゲーム1の説明文をここに入力します。",
+      "id": "svs",
+      "title": "サマすく",
+      "description": "サマすく向けシーン/キャラデータ",
       "scenes": [
         {
-          "id": "scene1",
-          "title": "シーン1",
-          "description": "美しい和室での一場面",
-          "displayImage": "images/game1/scenes/display/sample-display.png",
-          "dataImage": "images/game1/scenes/data/sample-scene.png"
+          "id": "scene7",
+          "title": "衣擦れを照らす行燈",
+          "description": "",
+          "displayImage": "images/svs/scenes/display/20241230110951768.png",
+          "dataImage": "images/svs/scenes/data/2024_1226_0804_36_678.png"
         },
         {
-          "id": "scene2",
-          "title": "シーン2",
-          "description": "和室での別の場面",
-          "displayImage": "images/game1/scenes/display/sample-display.png",
-          "dataImage": "images/game1/scenes/data/sample-scene.png"
+          "id": "scene6",
+          "title": "くわえリボン",
+          "description": "",
+          "displayImage": "images/svs/scenes/display/20241225230519134.png",
+          "dataImage": "images/svs/scenes/data/2024_1225_1519_23_503.png"
+        },
+        {
+          "id": "scene5",
+          "title": "銀河観測地点",
+          "description": "",
+          "displayImage": "images/svs/scenes/display/20241209191019511.png",
+          "dataImage": "images/svs/scenes/data/2024_1109_0420_58_638.png"
+        },
+        {
+          "id": "scene4",
+          "title": "月光とダイオード",
+          "description": "",
+          "displayImage": "images/svs/scenes/display/20241028045559690.png",
+          "dataImage": "images/svs/scenes/data/2024_1028_0452_18_929.png"
         },
         {
           "id": "scene3",
-          "title": "シーン3",
-          "description": "和室での特別な場面",
-          "displayImage": "images/game1/scenes/display/sample-display.png",
-          "dataImage": "images/game1/scenes/data/sample-scene.png"
-        }
-      ],
-      "characters": [
-        {
-          "id": "character1",
-          "name": "キャラクター1",
-          "description": "白髪の少女",
-          "image": "images/game1/characters/sample-chara.png"
-        },
-        {
-          "id": "character2",
-          "name": "キャラクター2",
-          "description": "白髪の少女・別ポーズ",
-          "image": "images/game1/characters/sample-chara.png"
-        },
-        {
-          "id": "character3",
-          "name": "キャラクター3",
-          "description": "白髪の少女・笑顔",
-          "image": "images/game1/characters/sample-chara.png"
-        },
-        {
-          "id": "character4",
-          "name": "キャラクター4",
-          "description": "白髪の少女・悲しい表情",
-          "image": "images/game1/characters/sample-chara.png"
-        }
-      ]
-    },
-    {
-      "id": "game2",
-      "title": "ゲーム2",
-      "description": "ゲーム2の説明文をここに入力します。",
-      "scenes": [
-        {
-          "id": "scene1",
-          "title": "シーン1",
-          "description": "別の美しい和室での一場面",
-          "displayImage": "images/game2/scenes/display/sample-display.png",
-          "dataImage": "images/game2/scenes/data/sample-scene.png"
+          "title": "ビーチでの挑発",
+          "description": "",
+          "displayImage": "images/svs/scenes/display/20241020125210081.png",
+          "dataImage": "images/svs/scenes/data/2024_1017_1937_51_653.png"
         },
         {
           "id": "scene2",
-          "title": "シーン2",
-          "description": "別の和室での別の場面",
-          "displayImage": "images/game2/scenes/display/sample-display.png",
-          "dataImage": "images/game2/scenes/data/sample-scene.png"
+          "title": "陽光とフリルレース",
+          "description": "",
+          "displayImage": "images/svs/scenes/display/20241001194329276_.png",
+          "dataImage": "images/svs/scenes/data/2024_0929_0406_05_205.png"
+        },
+        {
+          "id": "scene1",
+          "title": "夕涼み会",
+          "description": "",
+          "displayImage": "images/svs/scenes/display/20240926184812620.png",
+          "dataImage": "images/svs/scenes/data/2024_0926_1812_27_640.png"
+        }
+      ],
+      "characters": []
+    },
+    {
+      "id": "hc",
+      "title": "ハニカム",
+      "description": "ハニカム向けシーン/キャラデータ",
+      "scenes": [
+        {
+          "id": "scene8",
+          "title": "ゆるふわモード、お試し中",
+          "description": "",
+          "displayImage": "images/hc/scenes/display/20240811211624149.png",
+          "dataImage": "images/hc/scenes/data/2024_0721_0501_48_438.png"
+        },
+        {
+          "id": "scene7",
+          "title": "押し倒し",
+          "description": "",
+          "displayImage": "images/hc/scenes/display/20240721211611807.png",
+          "dataImage": "images/hc/scenes/data/2024_0509_2001_17_772.png"
+        },
+        {
+          "id": "scene6",
+          "title": "日差しに包まれて",
+          "description": "",
+          "displayImage": "images/hc/scenes/display/20240525225838999.png",
+          "dataImage": "images/hc/scenes/data/2024_0313_1603_27_643.png"
+        },
+        {
+          "id": "scene5",
+          "title": "Check please!",
+          "description": "",
+          "displayImage": "images/hc/scenes/display/20240525211844814.png",
+          "dataImage": "images/hc/scenes/data/2024_0107_0054_01_773.png"
+        },
+        {
+          "id": "scene4",
+          "title": "接待を伴う飲食店",
+          "description": "",
+          "displayImage": "images/hc/scenes/display/20240425205437167.png",
+          "dataImage": "images/hc/scenes/data/2024_0426_1952_33_794.png"
+        },
+        {
+          "id": "scene3",
+          "title": "逆に座るお姉さん",
+          "description": "",
+          "displayImage": "images/hc/scenes/display/20240115164018058.png",
+          "dataImage": "images/hc/scenes/data/2024_0114_2152_49_710.png"
+        },
+        {
+          "id": "scene2",
+          "title": "バニー心音ちゃん",
+          "description": "。",
+          "displayImage": "images/hc/scenes/display/20240110022239805.png",
+          "dataImage": "images/hc/scenes/data/2024_0108_2300_48_659.png"
+        },
+        {
+          "id": "scene1",
+          "title": "耳かきASMR",
+          "description": "",
+          "displayImage": "images/hc/scenes/display/20231228002742714.png",
+          "dataImage": "images/hc/scenes/data/2023_1227_2320_19_203.png"
         }
       ],
       "characters": [
         {
           "id": "character1",
-          "name": "キャラクター1",
-          "description": "白髪の少女・ゲーム2バージョン",
-          "image": "images/game2/characters/sample-chara.png"
+          "name": "ウィノナ",
+          "description": "",
+          "image": "images/hc/characters/SyJBrHOip.png"
         },
         {
           "id": "character2",
-          "name": "キャラクター2",
-          "description": "白髪の少女・別ポーズ・ゲーム2バージョン",
-          "image": "images/game2/characters/sample-chara.png"
+          "name": "ディアラ",
+          "description": "",
+          "image": "images/hc/characters/H1JKHS_iT.png"
         },
         {
           "id": "character3",
-          "name": "キャラクター3",
-          "description": "白髪の少女・笑顔・ゲーム2バージョン",
-          "image": "images/game2/characters/sample-chara.png"
+          "name": "由岐",
+          "description": "",
+          "image": "images/hc/characters/rk_fBSOjT.png"
+        },
+        {
+          "id": "character4",
+          "name": "穂香",
+          "description": "",
+          "image": "images/hc/characters/B18uZ_rb6.png"
+        },
+        {
+          "id": "character5",
+          "name": "奈々",
+          "description": "",
+          "image": "images/hc/characters/BkiuZ_B-p.png"
+        },
+        {
+          "id": "character6",
+          "name": "香澄",
+          "description": "",
+          "image": "images/hc/characters/SkrazdJVA.png"
         }
       ]
     }
