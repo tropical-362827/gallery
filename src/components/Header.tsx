@@ -170,7 +170,7 @@ export default function Header() {
         <LeftSection>
           <Logo to="/" onClick={closeMenu}>tropical trove</Logo>
           <SocialLink
-            href="https://x.com/tropical-362827"
+            href="https://x.com/tropical_362827"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="X (Twitter)"
