@@ -4,22 +4,6 @@ X(旧Twitter)で公開している、illusionやILLGAMESのシーンデータ・
 
 https://tropical-362827.github.io/gallery/
 
-## 機能
-
-- 複数ゲームのギャラリー表示
-- シーン画像とキャラクター画像の2つのセクション
-- 画像クリック時のデータ画像ダウンロード機能
-- レスポンシブデザイン
-- GitHub Pages対応
-
-## 技術スタック
-
-- [React](https://reactjs.org/) - UIライブラリ
-- [TypeScript](https://www.typescriptlang.org/) - 型安全なJavaScript
-- [Vite](https://vitejs.dev/) - 高速な開発環境とビルドツール
-- [React Router](https://reactrouter.com/) - ルーティング
-- [Styled Components](https://styled-components.com/) - スタイリング
-
 ## 開発環境のセットアップ
 
 ### 前提条件
@@ -37,46 +21,6 @@ make setup
 
 # または手動で
 npm install
-```
-
-## 開発
-
-以下のコマンドを使用して開発サーバーを起動します。
-
-```bash
-# Makefileを使用する場合
-make dev
-
-# または手動で
-npm run dev
-```
-
-開発サーバーは http://localhost:5173/ で起動します。
-
-## ビルド
-
-プロダクション用のビルドを行うには以下のコマンドを実行します。
-
-```bash
-# Makefileを使用する場合
-make build
-
-# または手動で
-npm run build
-```
-
-ビルドされたファイルは `dist` ディレクトリに出力されます。
-
-## ビルド結果のプレビュー
-
-ビルドした結果をプレビューするには以下のコマンドを実行します。
-
-```bash
-# Makefileを使用する場合
-make preview
-
-# または手動で
-npm run preview
 ```
 
 ## 利用可能なコマンド
