@@ -3,7 +3,8 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyles = createGlobalStyle`
   :root {
     /* 淡い色で明るいカラーパレット */
-    --primary-color: #ff9a8b;  /* 淡いサーモンピンク */
+    --primary-color: #e75c48;  /* 濃いめのサーモンピンク */
+    --title-color: #d84936;    /* タイトル用の濃いめの赤 */
     --secondary-color: #ffd384; /* 淡いオレンジイエロー */
     --accent-color: #98ddca;   /* 淡いミントグリーン */
     --background-color: #f9f7f7; /* 明るいオフホワイト */

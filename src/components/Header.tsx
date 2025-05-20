@@ -32,8 +32,9 @@ const Logo = styled(Link)`
   font-size: 1.4rem;
   font-family: 'Playfair Display', serif;
   font-weight: 600;
-  letter-spacing: 0.5px;
-  color: var(--primary-color);
+  font-style: italic;
+  letter-spacing: -0.5px;
+  color: var(--title-color);
   margin-right: var(--spacing-sm);
   
   &:hover {

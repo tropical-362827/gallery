@@ -13,12 +13,14 @@ const HeroTitle = styled.h1`
   font-size: 4.2rem;
   font-family: 'Playfair Display', serif;
   font-weight: 600;
-  letter-spacing: 0.5px;
+  font-style: italic;
+  letter-spacing: -1px;
   margin-bottom: var(--spacing-md);
-  color: var(--primary-color);
+  color: var(--title-color);
   
   @media (max-width: 768px) {
     font-size: 2.8rem;
+    letter-spacing: -0.5px;
   }
 `;
 
