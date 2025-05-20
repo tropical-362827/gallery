@@ -1,6 +1,8 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
+import { GalleryData } from '../types/gallery';
+import { fetchGalleryData, getGamesForNavigation } from '../utils/galleryData';
 
 const HeaderContainer = styled.header`
   background-color: var(--surface-color);
@@ -64,7 +66,7 @@ const NavItem = styled.li`
   }
 `;
 
-const NavLink = styled(Link)<{ $isActive: boolean }>`
+const NavLink = styled(Link) <{ $isActive: boolean }>`
   color: ${({ $isActive }) => $isActive ? 'var(--primary-color)' : 'var(--text-color)'};
   font-weight: ${({ $isActive }) => $isActive ? '600' : '400'};
   padding: var(--spacing-xs) var(--spacing-sm);
@@ -91,50 +93,62 @@ const MenuButton = styled.button`
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [galleryData, setGalleryData] = useState<GalleryData | null>(null);
   const location = useLocation();
-  
+
+  useEffect(() => {
+    async function loadData() {
+      try {
+        const data = await fetchGalleryData();
+        setGalleryData(data);
+      } catch (error) {
+        console.error('Error fetching gallery data for navigation:', error);
+      }
+    }
+
+    loadData();
+  }, []);
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  
+
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
-  
+
+  // ナビゲーション用のゲーム一覧を取得
+  const games = getGamesForNavigation(galleryData);
+
   return (
     <HeaderContainer>
       <HeaderContent>
-        <Logo to="/" onClick={closeMenu}>ゲームギャラリー</Logo>
-        
+        <Logo to="/" onClick={closeMenu}>tropical trove</Logo>
+
         <MenuButton onClick={toggleMenu} aria-label="Toggle menu">
           {isMenuOpen ? '✕' : '☰'}
         </MenuButton>
-        
+
         <Nav $isOpen={isMenuOpen}>
           <NavList>
             <NavItem>
               <NavLink to="/" $isActive={location.pathname === '/'} onClick={closeMenu}>
-                ホーム
+                Home
               </NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink 
-                to="/game-1" 
-                $isActive={location.pathname === '/game-1'} 
-                onClick={closeMenu}
-              >
-                ゲーム1
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink 
-                to="/game-2" 
-                $isActive={location.pathname === '/game-2'} 
-                onClick={closeMenu}
-              >
-                ゲーム2
-              </NavLink>
-            </NavItem>
+            
+            {/* ゲームリンクを動的に生成 */}
+            {games.map(game => (
+              <NavItem key={game.id}>
+                <NavLink
+                  to={`/${game.id}`}
+                  $isActive={location.pathname === `/${game.id}`}
+                  onClick={closeMenu}
+                >
+                  {game.title}
+                </NavLink>
+              </NavItem>
+            ))}
           </NavList>
         </Nav>
       </HeaderContent>

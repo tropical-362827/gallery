@@ -78,7 +78,7 @@ export default function HomePage() {
   const [galleryData, setGalleryData] = useState<GalleryData | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  
+
   useEffect(() => {
     async function loadData() {
       try {
@@ -91,34 +91,36 @@ export default function HomePage() {
         setIsLoading(false);
       }
     }
-    
+
     loadData();
   }, []);
-  
+
   if (isLoading) {
     return <div>読み込み中...</div>;
   }
-  
+
   if (error) {
     return <div>{error}</div>;
   }
-  
+
   return (
     <>
       <Hero>
-        <HeroTitle>ゲームギャラリー</HeroTitle>
+        <HeroTitle>tropical trove</HeroTitle>
         <HeroDescription>
-          お気に入りのゲームシーンや魅力的なキャラクターを探索しましょう。
-          気に入ったシーンはクリックすることでダウンロードできます。
+          Xにて公開しているSSを置いておく場所です！
+        </HeroDescription>
+        <HeroDescription>
+          画像をクリックしてシーン/キャラデータをダウンロードできます！
         </HeroDescription>
       </Hero>
-      
+
       <GamesGrid>
         {galleryData?.games.map(game => (
           <GameCard key={game.id} to={`/${game.id}`}>
-            <GameImage 
-              src={game.scenes[0]?.displayImage || 'placeholder.jpg'} 
-              alt={game.title} 
+            <GameImage
+              src={game.scenes[0]?.displayImage || 'placeholder.jpg'}
+              alt={game.title}
             />
             <GameContent>
               <GameTitle>{game.title}</GameTitle>
