@@ -103,20 +103,6 @@ const NavLink = styled(Link) <{ $isActive: boolean }>`
   }
 `;
 
-const ExternalLink = styled.a`
-  display: flex;
-  align-items: center;
-  color: var(--text-color);
-  padding: var(--spacing-xs) var(--spacing-sm);
-  border-radius: 4px;
-  transition: all 0.2s ease;
-  
-  &:hover {
-    color: var(--primary-color);
-    background-color: rgba(106, 61, 232, 0.1);
-  }
-`;
-
 const MenuButton = styled.button`
   display: none;
   background: none;

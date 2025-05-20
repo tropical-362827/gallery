@@ -19,8 +19,6 @@ const Copyright = styled.p`
 `;
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
-
   return (
     <FooterContainer>
       <FooterContent>
