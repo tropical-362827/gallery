@@ -6,6 +6,20 @@
       "description": "サマすく向けシーン/キャラデータ",
       "scenes": [
         {
+          "id": "scene9",
+          "title": "Audacity",
+          "description": "",
+          "displayImage": "images/svs/scenes/display/20250521082546153.png",
+          "dataImage": "images/svs/scenes/data/2025_0516_1713_31_487.png"
+        },
+        {
+          "id": "scene8",
+          "title": "くわえさせリボン",
+          "description": "",
+          "displayImage": "images/svs/scenes/display/20250521082307557.png",
+          "dataImage": "images/svs/scenes/data/2025_0124_1613_59_273.png"
+        },
+        {
           "id": "scene7",
           "title": "衣擦れを照らす行燈",
           "description": "",
@@ -55,7 +69,68 @@
           "dataImage": "images/svs/scenes/data/2024_0926_1812_27_640.png"
         }
       ],
-      "characters": []
+      "characters": [
+        {
+          "id": "character9",
+          "name": "美紗",
+          "description": "",
+          "image": "images/svs/characters/09.png"
+        },
+        {
+          "id": "character9",
+          "name": "侑紗",
+          "description": "",
+          "image": "images/svs/characters/08.png"
+        },
+        {
+          "id": "character7",
+          "name": "香澄",
+          "description": "",
+          "image": "images/svs/characters/07.png"
+        },
+        {
+          "id": "character6",
+          "name": "由美子",
+          "description": "",
+          "image": "images/svs/characters/06.png"
+        },
+        {
+          "id": "character5",
+          "name": "蒼",
+          "description": "",
+          "image": "images/svs/characters/05.png"
+        },
+        {
+          "id": "character4",
+          "name": "ルミナ",
+          "description": "",
+          "image": "images/svs/characters/04.png"
+        },
+        {
+          "id": "character3",
+          "name": "由岐",
+          "description": "",
+          "image": "images/svs/characters/03.png"
+        },
+        {
+          "id": "character2",
+          "name": "ディアラ",
+          "description": "",
+          "image": "images/svs/characters/02.png"
+        },
+        {
+          "id": "character1",
+          "name": "ウィノナ",
+          "description": "",
+          "image": "images/svs/characters/01.png"
+        },
+        {
+          "id": "character0",
+          "name": "すずか",
+          "description": "",
+          "image": "images/svs/characters/00.png"
+        }
+      ]
     },
     {
       "id": "hc",
