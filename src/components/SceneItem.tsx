@@ -1,6 +1,8 @@
 import { useState } from 'react';
+import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import { Scene } from '../types/gallery';
+import { trackSceneDownload } from '../utils/analytics';
 
 interface SceneItemProps {
   scene: Scene;
@@ -67,6 +69,7 @@ const DownloadMessage = styled.div<{ $isVisible: boolean }>`
 
 export default function SceneItem({ scene }: SceneItemProps) {
   const [showDownloadMessage, setShowDownloadMessage] = useState(false);
+  const { gameId } = useParams<{ gameId: string }>();
 
   const handleDownload = async () => {
     try {
@@ -88,6 +91,11 @@ export default function SceneItem({ scene }: SceneItemProps) {
 
       // リンクを削除
       document.body.removeChild(link);
+
+      // Google Analyticsにイベントを送信
+      if (gameId) {
+        trackSceneDownload(gameId, scene.id, scene.title);
+      }
 
       // ダウンロードメッセージを表示
       setShowDownloadMessage(true);

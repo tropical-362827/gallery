@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import styled from 'styled-components';
 import { Character } from '../types/gallery';
+import { trackCharacterDownload } from '../utils/analytics';
+import { useParams } from 'react-router-dom';
 
 interface CharacterItemProps {
   character: Character;
@@ -70,6 +72,7 @@ const DownloadMessage = styled.div<{ $isVisible: boolean }>`
 
 export default function CharacterItem({ character }: CharacterItemProps) {
   const [showDownloadMessage, setShowDownloadMessage] = useState(false);
+  const { gameId } = useParams<{ gameId: string }>();
   
   const handleDownload = async () => {
     try {
@@ -91,6 +94,11 @@ export default function CharacterItem({ character }: CharacterItemProps) {
       
       // リンクを削除
       document.body.removeChild(link);
+      
+      // Google Analyticsにイベントを送信
+      if (gameId) {
+        trackCharacterDownload(gameId, character.id, character.name);
+      }
       
       // ダウンロードメッセージを表示
       setShowDownloadMessage(true);
