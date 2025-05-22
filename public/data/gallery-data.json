@@ -232,6 +232,403 @@
           "image": "images/hc/characters/SkrazdJVA.png"
         }
       ]
+    },
+    {
+      "id": "kks",
+      "title": "コイカツサンシャイン",
+      "description": "コイカツサンシャイン向けシーン/キャラデータ",
+      "scenes": [
+        {
+          "id": "scene1",
+          "title": "シーン1",
+          "description": "",
+          "displayImage": "images/kks/scenes/display/CharaStudio-2023-10-30-22-10-38-Render.png",
+          "dataImage": "images/kks/scenes/data/2023_1030_2210_56_145.png"
+        },
+        {
+          "id": "scene2",
+          "title": "シーン2",
+          "description": "",
+          "displayImage": "images/kks/scenes/display/nkKCcj3.png",
+          "dataImage": "images/kks/scenes/data/2023_0117_1914_44_717.png"
+        },
+        {
+          "id": "scene3",
+          "title": "シーン3",
+          "description": "",
+          "displayImage": "images/kks/scenes/display/buZyz4Q.jpg",
+          "dataImage": "images/kks/scenes/data/2023_0103_2217_12_554.png"
+        },
+        {
+          "id": "scene4",
+          "title": "シーン4",
+          "description": "",
+          "displayImage": "images/kks/scenes/display/BeEWSJP.jpg",
+          "dataImage": "images/kks/scenes/data/2022_1116_2227_03_616.png"
+        },
+        {
+          "id": "scene5",
+          "title": "シーン5",
+          "description": "",
+          "displayImage": "images/kks/scenes/display/L8YLGpC.jpg",
+          "dataImage": "images/kks/scenes/data/2022_0620_2013_20_849.png"
+        },
+        {
+          "id": "scene6",
+          "title": "シーン6",
+          "description": "",
+          "displayImage": "images/kks/scenes/display/05P1tnz.png",
+          "dataImage": "images/kks/scenes/data/2022_0602_2018_29_419.png"
+        },
+        {
+          "id": "scene7",
+          "title": "シーン7",
+          "description": "",
+          "displayImage": "images/kks/scenes/display/Ec5HOJd.jpg",
+          "dataImage": "images/kks/scenes/data/2022_0411_1616_59_550.png"
+        },
+        {
+          "id": "scene8",
+          "title": "シーン8",
+          "description": "",
+          "displayImage": "images/kks/scenes/display/g1jCpml.jpg",
+          "dataImage": "images/kks/scenes/data/2022_0403_1649_34_239.png"
+        },
+        {
+          "id": "scene9",
+          "title": "シーン9",
+          "description": "",
+          "displayImage": "images/kks/scenes/display/lVw2Pse.jpg",
+          "dataImage": "images/kks/scenes/data/2022_0305_2055_33_866.png"
+        },
+        {
+          "id": "scene10",
+          "title": "シーン10",
+          "description": "",
+          "displayImage": "images/kks/scenes/display/5O4fql2.jpg",
+          "dataImage": "images/kks/scenes/data/2022_0304_1842_30_501.png"
+        },
+        {
+          "id": "scene11",
+          "title": "シーン11",
+          "description": "",
+          "displayImage": "images/kks/scenes/display/6S4ANcW.jpg",
+          "dataImage": "images/kks/scenes/data/2022_0305_1642_32_283.png"
+        },
+        {
+          "id": "scene12",
+          "title": "シーン12",
+          "description": "",
+          "displayImage": "images/kks/scenes/display/p2KCQbW.jpg",
+          "dataImage": "images/kks/scenes/data/2021_1112_0026_45_804.png"
+        },
+        {
+          "id": "scene13",
+          "title": "シーン13",
+          "description": "",
+          "displayImage": "images/kks/scenes/display/en7dZcd.jpg",
+          "dataImage": "images/kks/scenes/data/2021_1107_1859_44_461.png"
+        },
+        {
+          "id": "scene14",
+          "title": "シーン14",
+          "description": "",
+          "displayImage": "images/kks/scenes/display/vmtE1vP.jpg",
+          "dataImage": "images/kks/scenes/data/2021_1102_1814_12_984.png"
+        },
+        {
+          "id": "scene15",
+          "title": "シーン15",
+          "description": "",
+          "displayImage": "images/kks/scenes/display/4ABXkRR.jpg",
+          "dataImage": "images/kks/scenes/data/2021_1010_1839_35_265.png"
+        },
+        {
+          "id": "scene16",
+          "title": "シーン16",
+          "description": "",
+          "displayImage": "images/kks/scenes/display/ua0ty1E.jpg",
+          "dataImage": "images/kks/scenes/data/2021_0925_1645_58_989.png"
+        }
+      ],
+      "characters": [
+        {
+          "id": "character1",
+          "name": "キャラ1",
+          "description": "",
+          "image": "images/kks/characters/rygc41x5n.png"
+        },
+        {
+          "id": "character2",
+          "name": "キャラ2",
+          "description": "",
+          "image": "images/kks/characters/rkrhVyxq2.png"
+        },
+        {
+          "id": "character3",
+          "name": "キャラ3",
+          "description": "",
+          "image": "images/kks/characters/B1YCDJl52.png"
+        },
+        {
+          "id": "character4",
+          "name": "キャラ4",
+          "description": "",
+          "image": "images/kks/characters/ByxJdJl93.png"
+        },
+        {
+          "id": "character5",
+          "name": "キャラ5",
+          "description": "",
+          "image": "images/kks/characters/BknhEyg9n.png"
+        },
+        {
+          "id": "character6",
+          "name": "キャラ6",
+          "description": "",
+          "image": "images/kks/characters/ryRSrkgqh.png"
+        },
+        {
+          "id": "character7",
+          "name": "キャラ7",
+          "description": "",
+          "image": "images/kks/characters/SkDfPye52.png"
+        },
+        {
+          "id": "character8",
+          "name": "キャラ8",
+          "description": "",
+          "image": "images/kks/characters/B1S7vJxqn.png"
+        },
+        {
+          "id": "character9",
+          "name": "キャラ9",
+          "description": "",
+          "image": "images/kks/characters/ryzCP1xqh.png"
+        },
+        {
+          "id": "character10",
+          "name": "キャラ10",
+          "description": "",
+          "image": "images/kks/characters/S1PRDkx5n.png"
+        },
+        {
+          "id": "character11",
+          "name": "キャラ11",
+          "description": "",
+          "image": "images/kks/characters/HyM3Peg92.png"
+        },
+        {
+          "id": "character12",
+          "name": "キャラ12",
+          "description": "",
+          "image": "images/kks/characters/rJ-Suge93.png"
+        }
+      ]
+    },
+    {
+      "id": "kk",
+      "title": "コイカツ",
+      "description": "コイカツ向けシーン/キャラデータ",
+      "scenes": [
+        {
+          "id": "scene1",
+          "title": "シーン1",
+          "description": "",
+          "displayImage": "images/kk/scenes/display/Xx5o6nX.jpg",
+          "dataImage": "images/kk/scenes/data/2021_0612_1923_56_077.png"
+        },
+        {
+          "id": "scene2",
+          "title": "シーン2",
+          "description": "",
+          "displayImage": "images/kk/scenes/display/jPOoFuS.jpg",
+          "dataImage": "images/kk/scenes/data/2021_0417_1824_59_494.png"
+        },
+        {
+          "id": "scene3",
+          "title": "シーン3",
+          "description": "",
+          "displayImage": "images/kk/scenes/display/EpquYbR.jpg",
+          "dataImage": "images/kk/scenes/data/2021_0330_0317_21_768.png"
+        },
+        {
+          "id": "scene4",
+          "title": "シーン4",
+          "description": "",
+          "displayImage": "images/kk/scenes/display/RQ96XUa.jpg",
+          "dataImage": "images/kk/scenes/data/2021_0318_2016_57_832.png"
+        },
+        {
+          "id": "scene5",
+          "title": "シーン5",
+          "description": "",
+          "displayImage": "images/kk/scenes/display/NdRkMX7.jpg",
+          "dataImage": "images/kk/scenes/data/2021_0312_1918_51_524.png"
+        },
+        {
+          "id": "scene6",
+          "title": "シーン6",
+          "description": "",
+          "displayImage": "images/kk/scenes/display/Wtdr8ol.jpg",
+          "dataImage": "images/kk/scenes/data/2021_0307_0331_26_396.png"
+        },
+        {
+          "id": "scene7",
+          "title": "シーン7",
+          "description": "",
+          "displayImage": "images/kk/scenes/display/dkaQxt2.jpg",
+          "dataImage": "images/kk/scenes/data/2021_0302_2006_10_523.png"
+        },
+        {
+          "id": "scene8",
+          "title": "シーン8",
+          "description": "",
+          "displayImage": "images/kk/scenes/display/N9MuEwJ.jpg",
+          "dataImage": "images/kk/scenes/data/2021_0223_1920_31_448.png"
+        },
+        {
+          "id": "scene9",
+          "title": "シーン9",
+          "description": "",
+          "displayImage": "images/kk/scenes/display/K06bKe1.jpg",
+          "dataImage": "images/kk/scenes/data/2021_0220_2337_56_461.png"
+        },
+        {
+          "id": "scene10",
+          "title": "シーン10",
+          "description": "",
+          "displayImage": "images/kk/scenes/display/juhv02o.jpg",
+          "dataImage": "images/kk/scenes/data/2021_0219_2024_57_070.png"
+        },
+        {
+          "id": "scene11",
+          "title": "シーン11",
+          "description": "",
+          "displayImage": "images/kk/scenes/display/qIyEB3i.jpg",
+          "dataImage": "images/kk/scenes/data/2021_0217_2046_53_962.png"
+        },
+        {
+          "id": "scene12",
+          "title": "シーン12",
+          "description": "",
+          "displayImage": "images/kk/scenes/display/CmUX6p0.jpg",
+          "dataImage": "images/kk/scenes/data/2021_0213_1758_39_232.png"
+        },
+        {
+          "id": "scene13",
+          "title": "シーン13",
+          "description": "",
+          "displayImage": "images/kk/scenes/display/G1xUuiL.jpg",
+          "dataImage": "images/kk/scenes/data/2021_0212_1959_31_293.png"
+        },
+        {
+          "id": "scene14",
+          "title": "シーン14",
+          "description": "",
+          "displayImage": "images/kk/scenes/display/8KVu0ty.jpg",
+          "dataImage": "images/kk/scenes/data/2021_0211_1927_26_693.png"
+        },
+        {
+          "id": "scene15",
+          "title": "シーン15",
+          "description": "",
+          "displayImage": "images/kk/scenes/display/XMGPLci.jpg",
+          "dataImage": "images/kk/scenes/data/2021_0206_0237_35_772.png"
+        },
+        {
+          "id": "scene16",
+          "title": "シーン16",
+          "description": "",
+          "displayImage": "images/kk/scenes/display/5oW1ZCD.jpg",
+          "dataImage": "images/kk/scenes/data/2021_0205_2057_30_591.png"
+        },
+        {
+          "id": "scene17",
+          "title": "シーン17",
+          "description": "",
+          "displayImage": "images/kk/scenes/display/EZMjrHf.jpg",
+          "dataImage": "images/kk/scenes/data/2021_0204_0318_14_388.png"
+        },
+        {
+          "id": "scene18",
+          "title": "シーン18",
+          "description": "",
+          "displayImage": "images/kk/scenes/display/9GbfGK2.jpg",
+          "dataImage": "images/kk/scenes/data/2021_0202_1748_02_933.png"
+        },
+        {
+          "id": "scene19",
+          "title": "シーン19",
+          "description": "",
+          "displayImage": "images/kk/scenes/display/x6rGoSr.jpg",
+          "dataImage": "images/kk/scenes/data/2021_0110_1256_34_210.png"
+        },
+        {
+          "id": "scene20",
+          "title": "シーン20",
+          "description": "",
+          "displayImage": "images/kk/scenes/display/CWyAZXB.jpg",
+          "dataImage": "images/kk/scenes/data/2020_0905_0445_23_474.png"
+        },
+        {
+          "id": "scene21",
+          "title": "シーン21",
+          "description": "",
+          "displayImage": "images/kk/scenes/display/uOAWRyr.jpg",
+          "dataImage": "images/kk/scenes/data/2020_0718_1850_49_904.png"
+        },
+        {
+          "id": "scene22",
+          "title": "シーン22",
+          "description": "",
+          "displayImage": "images/kk/scenes/display/UtnrVQP.jpg",
+          "dataImage": "images/kk/scenes/data/2020_0705_0313_19_894.png"
+        },
+        {
+          "id": "scene23",
+          "title": "シーン23",
+          "description": "",
+          "displayImage": "images/kk/scenes/display/zmS46iP.jpg",
+          "dataImage": "images/kk/scenes/data/2020_0627_2138_47_869.png"
+        },
+        {
+          "id": "scene24",
+          "title": "シーン24",
+          "description": "",
+          "displayImage": "images/kk/scenes/display/Ff9inoq.jpg",
+          "dataImage": "images/kk/scenes/data/2020_0315_2152_44_787.png"
+        },
+        {
+          "id": "scene25",
+          "title": "マップシーン1",
+          "description": "",
+          "displayImage": "images/kk/scenes/display/CharaStudio-2023-10-12-21-36-44-Render.png",
+          "dataImage": "images/kk/scenes/data/2023_1012_2135_50_846.png"
+        },
+        {
+          "id": "scene26",
+          "title": "マップシーン2",
+          "description": "",
+          "displayImage": "images/kk/scenes/display/CharaStudio-2023-10-12-21-38-11-Render.png",
+          "dataImage": "images/kk/scenes/data/2023_1012_2138_15_043.png"
+        },
+        {
+          "id": "scene27",
+          "title": "マップシーン3",
+          "description": "",
+          "displayImage": "images/kk/scenes/display/CharaStudio-2023-10-12-21-56-09-Render.png",
+          "dataImage": "images/kk/scenes/data/2023_1012_2156_39_970.png"
+        },
+        {
+          "id": "scene28",
+          "title": "マップシーン4",
+          "description": "",
+          "displayImage": "images/kk/scenes/display/CharaStudio-2023-10-12-21-56-24-Render.png",
+          "dataImage": "images/kk/scenes/data/2023_1012_2156_56_621.png"
+        }
+      ],
+      "characters": []
     }
   ]
 }
