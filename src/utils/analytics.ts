@@ -18,7 +18,8 @@ export const initializeGA = () => {
   window.dataLayer = window.dataLayer || [];
 
   // gtag関数の正しい実装
-  function gtag() {
+  // @ts-ignore: gtagはany型の引数を受け取るためTypeScriptの型チェックを無視
+  function gtag(...args: any[]) {
     // argsではなく、argumentsオブジェクトを直接使用
     window.dataLayer.push(arguments);
   }

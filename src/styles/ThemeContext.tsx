@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { backgroundPatterns } from './BackgroundPattern';
 
