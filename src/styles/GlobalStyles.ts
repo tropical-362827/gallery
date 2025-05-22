@@ -1,4 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
+// ThemeContextを使用するため、直接パターンをここで適用しない
+// import { applyBackgroundPattern } from './BackgroundPattern';
 
 export const GlobalStyles = createGlobalStyle`
   :root {

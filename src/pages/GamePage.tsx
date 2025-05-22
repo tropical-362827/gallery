@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import styled from 'styled-components';
+import CharacterItem from '../components/CharacterItem';
+import SceneItem from '../components/SceneItem';
 import { Game } from '../types/gallery';
 import { fetchGalleryData } from '../utils/galleryData';
-import SceneItem from '../components/SceneItem';
-import CharacterItem from '../components/CharacterItem';
 
 const PageTitle = styled.h1`
   color: var(--primary-color);
@@ -78,12 +78,12 @@ export default function GamePage() {
   const [game, setGame] = useState<Game | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  
+
   useEffect(() => {
     async function loadData() {
       try {
         const data = await fetchGalleryData();
-        
+
         const foundGame = data.games.find(g => g.id === gameId);
         if (foundGame) {
           setGame(foundGame);
@@ -97,18 +97,18 @@ export default function GamePage() {
         setIsLoading(false);
       }
     }
-    
+
     loadData();
   }, [gameId]);
-  
+
   const handleBack = () => {
     navigate(-1);
   };
-  
+
   if (isLoading) {
     return <div>読み込み中...</div>;
   }
-  
+
   if (error || !game) {
     return (
       <>
@@ -117,21 +117,19 @@ export default function GamePage() {
       </>
     );
   }
-  
+
   return (
     <>
-      <BackButton onClick={handleBack}>戻る</BackButton>
-      
       <PageTitle>{game.title}</PageTitle>
       <PageDescription>{game.description}</PageDescription>
-      
+
       <ScenesSection>
         <SectionTitle>シーン</SectionTitle>
         {game.scenes.map(scene => (
           <SceneItem key={scene.id} scene={scene} />
         ))}
       </ScenesSection>
-      
+
       <CharactersSection>
         <SectionTitle>キャラクター</SectionTitle>
         <CharactersGrid>
