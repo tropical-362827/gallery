@@ -6,6 +6,13 @@
       "description": "サマすく向けシーン/キャラデータ",
       "scenes": [
         {
+          "id": "scene10",
+          "title": "夜景と逆光",
+          "description": "",
+          "displayImage": "images/svs/scenes/display/20250530190148192.png",
+          "dataImage": "images/svs/scenes/data/2025_0420_0209_28_222.png"
+        },
+        {
           "id": "scene9",
           "title": "Audacity",
           "description": "",
