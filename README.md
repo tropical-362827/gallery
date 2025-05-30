@@ -84,4 +84,6 @@ npm install
 
 ## ライセンス
 
-このプロジェクトは [MIT ライセンス](LICENSE) の下で公開されています。
+- このプロジェクトのコードは [MIT ライセンス](LICENSE) の下で公開されています。
+- サマすく/ハニカムのデータの著作権は[ILLGAMES](https://www.illgames.jp/)に帰属します。
+    - シーンデータ・キャラクターデータの使用は[ILLGAMESの利用規約](https://www.illgames.jp/copyright.php)以外の制限はありません。自由に使用/改変/再配布してください。

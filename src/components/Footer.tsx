@@ -23,7 +23,18 @@ export default function Footer() {
     <FooterContainer>
       <FooterContent>
         <Copyright>
-          ハニカム/サマすくのデータの著作権はILLGAMESに帰属します。
+          ハニカム/サマすくのデータの著作権は
+          <a href="https://www.illgames.jp/" target="_blank" rel="noopener noreferrer">
+            ILLGAMES
+          </a>
+          に帰属します。
+        </Copyright>
+        <Copyright>
+          各データの使用は
+          <a href="https://www.illgames.jp/copyright.php" target="_blank" rel="noopener noreferrer">
+            ILLGAMESの利用規約
+          </a>
+          以外の制限はありません。ご自由に使用/改変/再配布してください！
         </Copyright>
       </FooterContent>
     </FooterContainer>
