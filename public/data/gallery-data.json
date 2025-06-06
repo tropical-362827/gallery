@@ -6,6 +6,13 @@
       "description": "サマすく向けシーン/キャラデータ",
       "scenes": [
         {
+          "id": "scene11",
+          "title": "夜景と逆光 #2",
+          "description": "",
+          "displayImage": "images/svs/scenes/display/20250606185350126.png",
+          "dataImage": "images/svs/scenes/data/2025_0603_1801_23_868.png"
+        },
+        {
           "id": "scene10",
           "title": "夜景と逆光",
           "description": "",
