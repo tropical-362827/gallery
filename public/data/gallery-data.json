@@ -643,6 +643,28 @@
         }
       ],
       "characters": []
+    },
+    {
+      "id": "kk-kks-mod",
+      "title": "コイカツ(MOD)",
+      "description": "コイカツかコイカツサンシャイン向けのMODを使用したシーン/キャラデータ",
+      "scenes": [
+        {
+          "id": "scene1",
+          "title": "Night-Blue Summer",
+          "description": "",
+          "displayImage": "images/kk-kks-mod/scenes/display/night-blue-summer.png",
+          "dataImage": "images/kk-kks-mod/scenes/data/night-blue-summer.png"
+        }
+      ],
+      "characters": [
+        {
+          "id": "character1",
+          "name": "遥",
+          "description": "",
+          "image": "images/kk-kks-mod/characters/haruka.png"
+        }
+      ]
     }
   ]
 }
