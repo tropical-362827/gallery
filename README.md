@@ -1,3 +1,6 @@
+
+![tropical trove](/public/ogp.png)
+
 # tropical-362827のSS用ギャラリー
 
 X(旧Twitter)で公開している、illusionやILLGAMESのシーンデータ・キャラデータを公開するためのサイトです。
