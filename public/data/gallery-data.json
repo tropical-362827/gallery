@@ -6,6 +6,13 @@
       "description": "サマすく向けシーン/キャラデータ",
       "scenes": [
         {
+          "id": "scene12",
+          "title": "1,000フォロー記念",
+          "description": "",
+          "displayImage": "images/svs/scenes/display/20250712215028455.png",
+          "dataImage": "images/svs/scenes/data/2025_0704_1439_10_185.png"
+        },
+        {
           "id": "scene11",
           "title": "夜景と逆光 #2",
           "description": "",
