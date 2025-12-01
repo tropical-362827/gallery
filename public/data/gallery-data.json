@@ -1,6 +1,28 @@
 {
   "games": [
     {
+      "id": "ac",
+      "title": "アイコミ",
+      "description": "アイコミ向けシーン/キャラデータ",
+      "scenes": [
+        {
+          "id": "scene1",
+          "title": "Audacity #2",
+          "description": "",
+          "displayImage": "images/ac/scenes/display/audacity-2.png",
+          "dataImage": "images/ac/scenes/data/audacity-2.png"
+        }
+      ],
+      "characters": [
+        {
+          "id": "character1",
+          "name": "由岐",
+          "description": "",
+          "image": "images/ac/characters/yuki.png"
+        }
+      ]
+    },
+    {
       "id": "svs",
       "title": "サマすく",
       "description": "サマすく向けシーン/キャラデータ",
