@@ -6,6 +6,13 @@
       "description": "アイコミ向けシーン/キャラデータ",
       "scenes": [
         {
+          "id": "scene2",
+          "title": "真夏とラムネの青",
+          "description": "",
+          "displayImage": "images/ac/scenes/display/midsummer-ramune-blue.png",
+          "dataImage": "images/ac/scenes/data/midsummer-ramune-blue.png"
+        },
+        {
           "id": "scene1",
           "title": "Audacity #2",
           "description": "",
@@ -19,6 +26,12 @@
           "name": "由岐",
           "description": "",
           "image": "images/ac/characters/yuki.png"
+        },
+        {
+          "id": "character2",
+          "name": "ラクス",
+          "description": "",
+          "image": "images/ac/characters/lux.png"
         }
       ]
     },
