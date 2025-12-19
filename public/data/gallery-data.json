@@ -13,6 +13,13 @@
           "dataImage": "images/ac/scenes/data/midsummer-ramune-blue.png"
         },
         {
+          "id": "scene3",
+          "title": "きらめき☆ステージ",
+          "description": "",
+          "displayImage": "images/ac/scenes/display/sparkling-star-stage.png",
+          "dataImage": "images/ac/scenes/data/sparkling-star-stage.png"
+        },
+        {
           "id": "scene1",
           "title": "Audacity #2",
           "description": "",
