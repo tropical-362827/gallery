@@ -6,6 +6,13 @@
       "description": "アイコミ向けシーン/キャラデータ",
       "scenes": [
         {
+          "id": "scene4",
+          "title": "くわえリボン #2",
+          "description": "",
+          "displayImage": "images/ac/scenes/display/unwrap-me.png",
+          "dataImage": "images/ac/scenes/data/unwrap-me.png"
+        },
+        {
           "id": "scene2",
           "title": "真夏とラムネの青",
           "description": "",
@@ -39,6 +46,12 @@
           "name": "ラクス",
           "description": "",
           "image": "images/ac/characters/lux.png"
+        },
+        {
+          "id": "character3",
+          "name": "由美子",
+          "description": "",
+          "image": "images/ac/characters/yumiko.png"
         }
       ]
     },
