@@ -6,6 +6,13 @@
       "description": "アイコミ向けシーン/キャラデータ",
       "scenes": [
         {
+          "id": "scene5",
+          "title": "屠蘇に酔う",
+          "description": "",
+          "displayImage": "images/ac/scenes/display/holiday-spirits.png",
+          "dataImage": "images/ac/scenes/data/holiday-spirits.png"
+        },
+        {
           "id": "scene4",
           "title": "くわえリボン #2",
           "description": "",
