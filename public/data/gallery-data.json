@@ -8,28 +8,28 @@
         {
           "id": "scene5",
           "title": "屠蘇に酔う",
-          "description": "",
+          "description": "Holiday Spirits",
           "displayImage": "images/ac/scenes/display/holiday-spirits.png",
           "dataImage": "images/ac/scenes/data/holiday-spirits.png"
         },
         {
           "id": "scene4",
           "title": "くわえリボン #2",
-          "description": "",
+          "description": "Unwrap Me",
           "displayImage": "images/ac/scenes/display/unwrap-me.png",
           "dataImage": "images/ac/scenes/data/unwrap-me.png"
         },
         {
           "id": "scene2",
           "title": "真夏とラムネの青",
-          "description": "",
+          "description": "Midsummer, Ramune Blue",
           "displayImage": "images/ac/scenes/display/midsummer-ramune-blue.png",
           "dataImage": "images/ac/scenes/data/midsummer-ramune-blue.png"
         },
         {
           "id": "scene3",
           "title": "きらめき☆ステージ",
-          "description": "",
+          "description": "Sparkling☆Stage",
           "displayImage": "images/ac/scenes/display/sparkling-star-stage.png",
           "dataImage": "images/ac/scenes/data/sparkling-star-stage.png"
         },
