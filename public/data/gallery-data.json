@@ -6,6 +6,13 @@
       "description": "アイコミ向けシーン/キャラデータ",
       "scenes": [
         {
+          "id": "scene6",
+          "title": "アイコミデッド",
+          "description": "Aicomided",
+          "displayImage": "images/ac/scenes/display/aicomided.png",
+          "dataImage": "images/ac/scenes/data/aicomided.png"
+        },
+        {
           "id": "scene5",
           "title": "屠蘇に酔う",
           "description": "Holiday Spirits",
@@ -59,6 +66,12 @@
           "name": "由美子",
           "description": "",
           "image": "images/ac/characters/yumiko.png"
+        },
+        {
+          "id": "character4",
+          "name": "ウィノナ",
+          "description": "",
+          "image": "images/ac/characters/winona.png"
         }
       ]
     },
