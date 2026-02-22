@@ -6,6 +6,13 @@
       "description": "アイコミ向けシーン/キャラデータ",
       "scenes": [
         {
+          "id": "scene7",
+          "title": "猫コスプレ",
+          "description": "NEKO",
+          "displayImage": "images/ac/scenes/display/neko.png",
+          "dataImage": "images/ac/scenes/data/neko.png"
+        },
+        {
           "id": "scene6",
           "title": "アイコミデッド",
           "description": "Aicomided",
@@ -72,6 +79,12 @@
           "name": "ウィノナ",
           "description": "",
           "image": "images/ac/characters/winona.png"
+        },
+        {
+          "id": "character5",
+          "name": "さとみ",
+          "description": "",
+          "image": "images/ac/characters/satomi.png"
         }
       ]
     },
