@@ -1,4 +1,9 @@
 import { parseHeader, type ConvertTarget } from 'koikatu.js';
+import {
+  getLocalizedTargetLabel,
+  getLocalizedTargetShortLabel,
+  type Locale,
+} from '../i18n/config';
 
 export type CardSource = ConvertTarget;
 
@@ -20,15 +25,6 @@ const GAME_ID_TO_SOURCE: Partial<Record<string, CardSource>> = {
   hc: 'HC',
   kks: 'KKS',
   kk: 'KK',
-};
-
-const TARGET_LABELS: Record<ConvertTarget, string> = {
-  KK: 'コイカツ',
-  KKS: 'コイカツサンシャイン',
-  EC: 'エモクリ',
-  HC: 'ハニカム',
-  SV: 'サマすく',
-  AC: 'アイコミ',
 };
 
 const AVAILABLE_TARGETS: Record<CardSource, ConvertTarget[]> = {
@@ -69,8 +65,12 @@ export function getAvailableTargets(source: CardSource | null): ConvertTarget[] 
   return AVAILABLE_TARGETS[source];
 }
 
-export function getTargetLabel(target: ConvertTarget): string {
-  return TARGET_LABELS[target];
+export function getTargetLabel(target: ConvertTarget, locale: Locale = 'ja'): string {
+  return getLocalizedTargetLabel(target, locale);
+}
+
+export function getTargetShortLabel(target: ConvertTarget, locale: Locale = 'ja'): string {
+  return getLocalizedTargetShortLabel(target, locale);
 }
 
 export function buildConvertedFileName(fileName: string, target: ConvertTarget): string {

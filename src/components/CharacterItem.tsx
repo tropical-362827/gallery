@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { Character } from '../types/gallery';
+import { getLocalizedCharacterName, useI18n } from '../i18n';
 import { trackCharacterDownload } from '../utils/analytics';
 import { useParams } from 'react-router-dom';
 import { convertCard, type ConvertTarget } from 'koikatu.js';
@@ -8,8 +9,9 @@ import {
   buildConvertedFileName,
   detectCardSource,
   getAvailableTargets,
-  getSourceFromGameId,
   getTargetLabel,
+  getTargetShortLabel,
+  getSourceFromGameId,
 } from '../utils/characterCardConversion';
 
 interface CharacterItemProps {
@@ -75,13 +77,20 @@ const ActionDivider = styled.div`
   background: color-mix(in srgb, var(--border-color) 70%, white 30%);
 `;
 
-const ConvertButton = styled.button<{ $isLoading: boolean }>`
+const ConvertButton = styled.button<{ $isLoading: boolean; $variant: 'primary' | 'subtle' }>`
   width: 100%;
   border: none;
   border-radius: 999px;
   padding: var(--spacing-sm) var(--spacing-md);
-  background: ${({ $isLoading }) =>
-    $isLoading ? 'var(--border-color)' : 'var(--primary-color)'};
+  background: ${({ $isLoading, $variant }) => {
+    if ($isLoading) {
+      return 'var(--border-color)';
+    }
+
+    return $variant === 'primary'
+      ? 'var(--primary-color)'
+      : 'color-mix(in srgb, var(--primary-color) 60%, white 35%)';
+  }};
   color: white;
   font-size: 0.85rem;
   font-weight: 700;
@@ -89,8 +98,15 @@ const ConvertButton = styled.button<{ $isLoading: boolean }>`
   opacity: ${({ disabled }) => (disabled ? '0.65' : '1')};
 
   &:hover {
-    background: ${({ $isLoading }) =>
-      $isLoading ? 'var(--border-color)' : 'var(--secondary-color)'};
+    background: ${({ $isLoading, $variant }) => {
+      if ($isLoading) {
+        return 'var(--border-color)';
+      }
+
+      return $variant === 'primary'
+        ? 'var(--secondary-color)'
+        : 'color-mix(in srgb, var(--primary-color) 72%, white 28%)';
+    }};
   }
 `;
 
@@ -121,6 +137,7 @@ const DownloadMessage = styled.div<{ $isVisible: boolean; $tone: 'success' | 'er
 `;
 
 export default function CharacterItem({ character }: CharacterItemProps) {
+  const { locale, messages } = useI18n();
   const { gameId } = useParams<{ gameId: string }>();
   const [message, setMessage] = useState('');
   const [messageTone, setMessageTone] = useState<'success' | 'error'>('success');
@@ -132,6 +149,7 @@ export default function CharacterItem({ character }: CharacterItemProps) {
   const cardBufferRef = useRef<ArrayBuffer | null>(null);
   const availableTargets = getAvailableTargets(source);
   const fileName = character.image.split('/').pop() || `character-${character.id}.png`;
+  const displayName = getLocalizedCharacterName(character, locale);
 
   const showMessage = (nextMessage: string, tone: 'success' | 'error') => {
     if (downloadTimerRef.current) {
@@ -248,13 +266,13 @@ export default function CharacterItem({ character }: CharacterItemProps) {
       URL.revokeObjectURL(objectUrl);
 
       if (gameId) {
-        trackCharacterDownload(gameId, character.id, character.name, 'converted', target);
+        trackCharacterDownload(gameId, character.id, displayName, 'converted', target);
       }
 
-      showMessage(`${getTargetLabel(target)}向けに変換してダウンロードしました`, 'success');
+      showMessage(messages.characterItem.convertSuccess(getTargetLabel(target, locale)), 'success');
     } catch (error) {
       console.error('ダウンロード中にエラーが発生しました:', error);
-      showMessage(`${getTargetLabel(target)}への変換に失敗しました`, 'error');
+      showMessage(messages.characterItem.convertError(getTargetLabel(target, locale)), 'error');
     } finally {
       setActiveTarget(null);
     }
@@ -277,13 +295,13 @@ export default function CharacterItem({ character }: CharacterItemProps) {
       URL.revokeObjectURL(objectUrl);
 
       if (gameId) {
-        trackCharacterDownload(gameId, character.id, character.name, 'original', 'original');
+        trackCharacterDownload(gameId, character.id, displayName, 'original', 'original');
       }
 
-      showMessage('オリジナルをダウンロードしました', 'success');
+      showMessage(messages.characterItem.originalSuccess, 'success');
     } catch (error) {
       console.error('オリジナルのダウンロード中にエラーが発生しました:', error);
-      showMessage('オリジナルのダウンロードに失敗しました', 'error');
+      showMessage(messages.characterItem.originalError, 'error');
     } finally {
       setActiveTarget(null);
     }
@@ -293,10 +311,10 @@ export default function CharacterItem({ character }: CharacterItemProps) {
     <CharacterContainer>
       <CharacterImage 
         src={character.image} 
-        alt={character.name} 
+        alt={displayName} 
       />
       <CharacterInfo>
-        <CharacterName>{character.name}</CharacterName>
+        <CharacterName>{displayName}</CharacterName>
         <CharacterDescription>{character.description}</CharacterDescription>
       </CharacterInfo>
 
@@ -304,12 +322,15 @@ export default function CharacterItem({ character }: CharacterItemProps) {
         <ConvertButton
           type="button"
           $isLoading={activeTarget === 'original'}
+          $variant="primary"
           disabled={activeTarget !== null}
           onClick={() => {
             void handleOriginalDownload();
           }}
         >
-          {activeTarget === 'original' ? 'ダウンロード中...' : 'キャラクターをDL'}
+          {activeTarget === 'original'
+            ? messages.characterItem.loadingOriginal
+            : messages.characterItem.downloadOriginal}
         </ConvertButton>
 
         {availableTargets.length > 0 && <ActionDivider />}
@@ -319,22 +340,25 @@ export default function CharacterItem({ character }: CharacterItemProps) {
             key={target}
             type="button"
             $isLoading={activeTarget === target}
+            $variant="subtle"
             disabled={activeTarget !== null || isResolvingSource}
             onClick={() => {
               void handleDownload(target);
             }}
           >
-            {activeTarget === target ? '変換中...' : `${getTargetLabel(target)}向けに変換してDL`}
+            {activeTarget === target
+              ? messages.characterItem.loadingConvert
+              : messages.characterItem.convertButton(getTargetShortLabel(target, locale))}
           </ConvertButton>
         ))}
       </CharacterActions>
 
       {isResolvingSource && (
-        <HelperText>対応する変換形式を確認中です。</HelperText>
+        <HelperText>{messages.characterItem.checkingFormats}</HelperText>
       )}
 
       {!isResolvingSource && availableTargets.length === 0 && (
-        <HelperText>このカードで利用できるのはオリジナルDLのみです。</HelperText>
+        <HelperText>{messages.characterItem.originalOnly}</HelperText>
       )}
 
       <DownloadMessage $isVisible={isMessageVisible} $tone={messageTone}>

@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import CharacterItem from '../components/CharacterItem';
 import SceneItem from '../components/SceneItem';
+import { getLocalizedGameDescription, getLocalizedGameTitle, useI18n } from '../i18n';
 import { Game } from '../types/gallery';
 import { fetchGalleryData } from '../utils/galleryData';
 
@@ -73,6 +74,7 @@ const ErrorMessage = styled.div`
 `;
 
 export default function GamePage() {
+  const { locale, messages } = useI18n();
   const { gameId } = useParams();
   const navigate = useNavigate();
   const [game, setGame] = useState<Game | null>(null);
@@ -81,6 +83,8 @@ export default function GamePage() {
 
   useEffect(() => {
     async function loadData() {
+      setError(null);
+
       try {
         const data = await fetchGalleryData();
 
@@ -88,10 +92,10 @@ export default function GamePage() {
         if (foundGame) {
           setGame(foundGame);
         } else {
-          setError('指定されたゲームが見つかりませんでした。');
+          setError(messages.gamePage.notFound);
         }
       } catch (err) {
-        setError('ギャラリーデータの読み込みに失敗しました。');
+        setError(messages.common.galleryLoadError);
         console.error(err);
       } finally {
         setIsLoading(false);
@@ -99,39 +103,42 @@ export default function GamePage() {
     }
 
     loadData();
-  }, [gameId]);
+  }, [gameId, messages.common.galleryLoadError, messages.gamePage.notFound]);
 
   const handleBack = () => {
     navigate(-1);
   };
 
   if (isLoading) {
-    return <div>読み込み中...</div>;
+    return <div>{messages.common.loading}</div>;
   }
 
   if (error || !game) {
     return (
       <>
-        <BackButton onClick={handleBack}>戻る</BackButton>
-        <ErrorMessage>{error || 'ゲームデータが見つかりませんでした。'}</ErrorMessage>
+        <BackButton onClick={handleBack}>{messages.gamePage.back}</BackButton>
+        <ErrorMessage>{error || messages.gamePage.dataNotFound}</ErrorMessage>
       </>
     );
   }
 
+  const localizedTitle = getLocalizedGameTitle(game.id, game.title, locale);
+  const localizedDescription = getLocalizedGameDescription(game.id, game.description, locale);
+
   return (
     <>
-      <PageTitle>{game.title}</PageTitle>
-      <PageDescription>{game.description}</PageDescription>
+      <PageTitle>{localizedTitle}</PageTitle>
+      <PageDescription>{localizedDescription}</PageDescription>
 
       <ScenesSection>
-        <SectionTitle>シーン</SectionTitle>
+        <SectionTitle>{messages.gamePage.scenes}</SectionTitle>
         {game.scenes.map(scene => (
           <SceneItem key={scene.id} scene={scene} />
         ))}
       </ScenesSection>
 
       <CharactersSection>
-        <SectionTitle>キャラクター</SectionTitle>
+        <SectionTitle>{messages.gamePage.characters}</SectionTitle>
         <CharactersGrid>
           {game.characters.map(character => (
             <CharacterItem key={character.id} character={character} />

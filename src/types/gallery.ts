@@ -8,7 +8,9 @@ export interface Scene {
 
 export interface Character {
   id: string;
-  name: string;
+  nameJa: string;
+  nameEn: string;
+  name?: string;
   description: string;
   image: string;
 }

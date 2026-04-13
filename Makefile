@@ -8,7 +8,7 @@ help:
 	@echo "使用可能なコマンド:"
 	@echo "  make setup     - Node.jsの環境をセットアップし、必要なパッケージをインストール"
 	@echo "  make install   - 依存パッケージをインストール"
-	@echo "  make dev       - 開発サーバーを起動 (http://localhost:5173/)"
+	@echo "  make dev       - 開発サーバーを起動 (0.0.0.0:5173 に bind)"
 	@echo "  make build     - プロダクション用にビルド"
 	@echo "  make preview   - ビルドした結果をプレビュー"
 	@echo "  make clean     - ビルドファイルとnode_modulesを削除"
@@ -31,8 +31,8 @@ install:
 
 # 開発サーバーの起動
 dev:
-	@echo "開発サーバーを起動中... (http://localhost:5173/)"
-	@npm run dev
+	@echo "開発サーバーを起動中... (http://0.0.0.0:5173/ に bind)"
+	@npm run dev -- --host 0.0.0.0
 
 # プロダクション用ビルド
 build:

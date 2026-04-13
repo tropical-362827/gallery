@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { useI18n } from '../i18n';
 
 const FooterContainer = styled.footer`
   background-color: var(--surface-color);
@@ -19,22 +20,24 @@ const Copyright = styled.p`
 `;
 
 export default function Footer() {
+  const { messages } = useI18n();
+
   return (
     <FooterContainer>
       <FooterContent>
         <Copyright>
-          ハニカム/サマすくのデータの著作権は
+          {messages.footer.copyrightLead}
           <a href="https://www.illgames.jp/" target="_blank" rel="noopener noreferrer">
             ILLGAMES
           </a>
-          に帰属します。
+          {messages.footer.copyrightTail}
         </Copyright>
         <Copyright>
-          各データの使用は
+          {messages.footer.termsLead}
           <a href="https://www.illgames.jp/copyright.php" target="_blank" rel="noopener noreferrer">
-            ILLGAMESの利用規約
+            {messages.footer.termsLink}
           </a>
-          以外の制限はありません。ご自由に使用/改変/再配布してください！
+          {messages.footer.termsTail}
         </Copyright>
       </FooterContent>
     </FooterContainer>

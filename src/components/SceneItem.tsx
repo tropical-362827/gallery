@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
+import { useI18n } from '../i18n';
 import { Scene } from '../types/gallery';
 import { trackSceneDownload } from '../utils/analytics';
 
@@ -68,6 +69,7 @@ const DownloadMessage = styled.div<{ $isVisible: boolean }>`
 `;
 
 export default function SceneItem({ scene }: SceneItemProps) {
+  const { messages } = useI18n();
   const [showDownloadMessage, setShowDownloadMessage] = useState(false);
   const { gameId } = useParams<{ gameId: string }>();
 
@@ -123,7 +125,7 @@ export default function SceneItem({ scene }: SceneItemProps) {
       </SceneInfo>
 
       <DownloadMessage $isVisible={showDownloadMessage}>
-        シーンデータをダウンロードしました
+        {messages.sceneItem.downloadSuccess}
       </DownloadMessage>
     </SceneContainer>
   );

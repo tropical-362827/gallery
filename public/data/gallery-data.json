@@ -58,33 +58,38 @@
       "characters": [
         {
           "id": "character1",
-          "name": "由岐",
           "description": "",
-          "image": "images/ac/characters/yuki.png"
+          "image": "images/ac/characters/yuki.png",
+          "nameJa": "由岐",
+          "nameEn": "Yuki"
         },
         {
           "id": "character2",
-          "name": "ラクス",
           "description": "",
-          "image": "images/ac/characters/lux.png"
+          "image": "images/ac/characters/lux.png",
+          "nameJa": "ラクス",
+          "nameEn": "Lux"
         },
         {
           "id": "character3",
-          "name": "由美子",
           "description": "",
-          "image": "images/ac/characters/yumiko.png"
+          "image": "images/ac/characters/yumiko.png",
+          "nameJa": "由美子",
+          "nameEn": "Yumiko"
         },
         {
           "id": "character4",
-          "name": "ウィノナ",
           "description": "",
-          "image": "images/ac/characters/winona.png"
+          "image": "images/ac/characters/winona.png",
+          "nameJa": "ウィノナ",
+          "nameEn": "Winona"
         },
         {
           "id": "character5",
-          "name": "さとみ",
           "description": "",
-          "image": "images/ac/characters/satomi.png"
+          "image": "images/ac/characters/satomi.png",
+          "nameJa": "さとみ",
+          "nameEn": "Satomi"
         }
       ]
     },
@@ -181,63 +186,73 @@
       "characters": [
         {
           "id": "character9",
-          "name": "美紗",
           "description": "",
-          "image": "images/svs/characters/09.png"
+          "image": "images/svs/characters/09.png",
+          "nameJa": "美紗",
+          "nameEn": "Misa"
         },
         {
           "id": "character8",
-          "name": "侑紗",
           "description": "",
-          "image": "images/svs/characters/08.png"
+          "image": "images/svs/characters/08.png",
+          "nameJa": "侑紗",
+          "nameEn": "Yusa"
         },
         {
           "id": "character7",
-          "name": "香澄",
           "description": "",
-          "image": "images/svs/characters/07.png"
+          "image": "images/svs/characters/07.png",
+          "nameJa": "香澄",
+          "nameEn": "Kasumi"
         },
         {
           "id": "character6",
-          "name": "由美子",
           "description": "",
-          "image": "images/svs/characters/06.png"
+          "image": "images/svs/characters/06.png",
+          "nameJa": "由美子",
+          "nameEn": "Yumiko"
         },
         {
           "id": "character5",
-          "name": "蒼",
           "description": "",
-          "image": "images/svs/characters/05.png"
+          "image": "images/svs/characters/05.png",
+          "nameJa": "蒼",
+          "nameEn": "Ao"
         },
         {
           "id": "character4",
-          "name": "ルミナ",
           "description": "",
-          "image": "images/svs/characters/04.png"
+          "image": "images/svs/characters/04.png",
+          "nameJa": "ルミナ",
+          "nameEn": "Lumina"
         },
         {
           "id": "character3",
-          "name": "由岐",
           "description": "",
-          "image": "images/svs/characters/03.png"
+          "image": "images/svs/characters/03.png",
+          "nameJa": "由岐",
+          "nameEn": "Yuki"
         },
         {
           "id": "character2",
-          "name": "ディアラ",
           "description": "",
-          "image": "images/svs/characters/02.png"
+          "image": "images/svs/characters/02.png",
+          "nameJa": "ディアラ",
+          "nameEn": "Diara"
         },
         {
           "id": "character1",
-          "name": "ウィノナ",
           "description": "",
-          "image": "images/svs/characters/01.png"
+          "image": "images/svs/characters/01.png",
+          "nameJa": "ウィノナ",
+          "nameEn": "Winona"
         },
         {
           "id": "character0",
-          "name": "すずか",
           "description": "",
-          "image": "images/svs/characters/00.png"
+          "image": "images/svs/characters/00.png",
+          "nameJa": "すずか",
+          "nameEn": "Suzuka"
         }
       ]
     },
@@ -306,39 +321,45 @@
       "characters": [
         {
           "id": "character1",
-          "name": "ウィノナ",
           "description": "",
-          "image": "images/hc/characters/SyJBrHOip.png"
+          "image": "images/hc/characters/SyJBrHOip.png",
+          "nameJa": "ウィノナ",
+          "nameEn": "Winona"
         },
         {
           "id": "character2",
-          "name": "ディアラ",
           "description": "",
-          "image": "images/hc/characters/H1JKHS_iT.png"
+          "image": "images/hc/characters/H1JKHS_iT.png",
+          "nameJa": "ディアラ",
+          "nameEn": "Diara"
         },
         {
           "id": "character3",
-          "name": "由岐",
           "description": "",
-          "image": "images/hc/characters/rk_fBSOjT.png"
+          "image": "images/hc/characters/rk_fBSOjT.png",
+          "nameJa": "由岐",
+          "nameEn": "Yuki"
         },
         {
           "id": "character4",
-          "name": "穂香",
           "description": "",
-          "image": "images/hc/characters/B18uZ_rb6.png"
+          "image": "images/hc/characters/B18uZ_rb6.png",
+          "nameJa": "穂香",
+          "nameEn": "Honoka"
         },
         {
           "id": "character5",
-          "name": "奈々",
           "description": "",
-          "image": "images/hc/characters/BkiuZ_B-p.png"
+          "image": "images/hc/characters/BkiuZ_B-p.png",
+          "nameJa": "奈々",
+          "nameEn": "Nana"
         },
         {
           "id": "character6",
-          "name": "香澄",
           "description": "",
-          "image": "images/hc/characters/SkrazdJVA.png"
+          "image": "images/hc/characters/SkrazdJVA.png",
+          "nameJa": "香澄",
+          "nameEn": "Kasumi"
         }
       ]
     },
@@ -463,75 +484,87 @@
       "characters": [
         {
           "id": "character1",
-          "name": "遥",
           "description": "",
-          "image": "images/kks/characters/rygc41x5n.png"
+          "image": "images/kks/characters/rygc41x5n.png",
+          "nameJa": "遥",
+          "nameEn": "Haruka"
         },
         {
           "id": "character2",
-          "name": "蒼乃",
           "description": "",
-          "image": "images/kks/characters/rkrhVyxq2.png"
+          "image": "images/kks/characters/rkrhVyxq2.png",
+          "nameJa": "蒼乃",
+          "nameEn": "Aono"
         },
         {
           "id": "character3",
-          "name": "由希乃",
           "description": "",
-          "image": "images/kks/characters/B1YCDJl52.png"
+          "image": "images/kks/characters/B1YCDJl52.png",
+          "nameJa": "由希乃",
+          "nameEn": "Yukino"
         },
         {
           "id": "character4",
-          "name": "エリカ",
           "description": "",
-          "image": "images/kks/characters/ByxJdJl93.png"
+          "image": "images/kks/characters/ByxJdJl93.png",
+          "nameJa": "エリカ",
+          "nameEn": "Erika"
         },
         {
           "id": "character5",
-          "name": "茉莉奈",
           "description": "",
-          "image": "images/kks/characters/BknhEyg9n.png"
+          "image": "images/kks/characters/BknhEyg9n.png",
+          "nameJa": "茉莉奈",
+          "nameEn": "Marina"
         },
         {
           "id": "character6",
-          "name": "栞",
           "description": "",
-          "image": "images/kks/characters/ryRSrkgqh.png"
+          "image": "images/kks/characters/ryRSrkgqh.png",
+          "nameJa": "栞",
+          "nameEn": "Shiori"
         },
         {
           "id": "character7",
-          "name": "怜奈",
           "description": "",
-          "image": "images/kks/characters/SkDfPye52.png"
+          "image": "images/kks/characters/SkDfPye52.png",
+          "nameJa": "怜奈",
+          "nameEn": "Reina"
         },
         {
           "id": "character8",
-          "name": "柚花",
           "description": "",
-          "image": "images/kks/characters/B1S7vJxqn.png"
+          "image": "images/kks/characters/B1S7vJxqn.png",
+          "nameJa": "柚花",
+          "nameEn": "Yuzuka"
         },
         {
           "id": "character9",
-          "name": "理沙",
           "description": "",
-          "image": "images/kks/characters/ryzCP1xqh.png"
+          "image": "images/kks/characters/ryzCP1xqh.png",
+          "nameJa": "理沙",
+          "nameEn": "Risa"
         },
         {
           "id": "character10",
-          "name": "佑季",
           "description": "",
-          "image": "images/kks/characters/S1PRDkx5n.png"
+          "image": "images/kks/characters/S1PRDkx5n.png",
+          "nameJa": "佑季",
+          "nameEn": "Yuki"
         },
         {
           "id": "character11",
-          "name": "エルザ",
           "description": "",
-          "image": "images/kks/characters/HyM3Peg92.png"
+          "image": "images/kks/characters/HyM3Peg92.png",
+          "nameJa": "エルザ",
+          "nameEn": "Elsa"
         },
         {
           "id": "character12",
-          "name": "桐葉",
           "description": "",
-          "image": "images/kks/characters/rJ-Suge93.png"
+          "image": "images/kks/characters/rJ-Suge93.png",
+          "nameJa": "桐葉",
+          "nameEn": "Kiriha"
         }
       ]
     },
@@ -755,9 +788,10 @@
       "characters": [
         {
           "id": "character1",
-          "name": "遥",
           "description": "",
-          "image": "images/kk-kks-mod/characters/haruka.png"
+          "image": "images/kk-kks-mod/characters/haruka.png",
+          "nameJa": "遥",
+          "nameEn": "Haruka"
         }
       ]
     }
