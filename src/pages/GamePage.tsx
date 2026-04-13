@@ -40,7 +40,8 @@ const CharactersGrid = styled.div`
   gap: var(--spacing-lg);
   
   @media (max-width: 768px) {
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--spacing-md);
   }
 `;
 

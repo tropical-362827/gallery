@@ -31,7 +31,7 @@ const SceneImage = styled.img`
 const SceneInfo = styled.div`
   padding: var(--spacing-lg);
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   gap: var(--spacing-md);
   
@@ -66,6 +66,7 @@ const ScenePostLink = styled.a`
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  align-self: center;
   flex-shrink: 0;
   color: white;
   background: #131313;
