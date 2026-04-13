@@ -4,6 +4,7 @@ export interface Scene {
   description: string;
   displayImage: string;
   dataImage: string;
+  xPostUrl?: string;
 }
 
 export interface Character {

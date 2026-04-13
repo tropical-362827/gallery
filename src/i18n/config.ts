@@ -33,6 +33,7 @@ export interface Messages {
   };
   sceneItem: {
     downloadSuccess: string;
+    openXPost: (sceneTitle: string) => string;
   };
   characterItem: {
     loadingOriginal: string;
@@ -84,6 +85,7 @@ const JA_MESSAGES: Messages = {
   },
   sceneItem: {
     downloadSuccess: 'シーンデータをダウンロードしました',
+    openXPost: sceneTitle => `${sceneTitle} のX投稿を開く`,
   },
   characterItem: {
     loadingOriginal: 'ダウンロード中...',
@@ -135,6 +137,7 @@ const EN_MESSAGES: Messages = {
   },
   sceneItem: {
     downloadSuccess: 'Scene data downloaded.',
+    openXPost: sceneTitle => `Open the X post for ${sceneTitle}`,
   },
   characterItem: {
     loadingOriginal: 'Downloading...',

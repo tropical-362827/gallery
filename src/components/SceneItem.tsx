@@ -30,10 +30,19 @@ const SceneImage = styled.img`
 
 const SceneInfo = styled.div`
   padding: var(--spacing-lg);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--spacing-md);
   
   @media (max-width: 768px) {
     padding: var(--spacing-sm) var(--spacing-md);
   }
+`;
+
+const SceneText = styled.div`
+  flex: 1;
+  min-width: 0;
 `;
 
 const SceneTitle = styled.h3`
@@ -48,6 +57,30 @@ const SceneTitle = styled.h3`
 const SceneDescription = styled.p`
   color: var(--text-secondary-color);
   margin-bottom: 0;
+`;
+
+const ScenePostLink = styled.a`
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: white;
+  background: #131313;
+  box-shadow: 0 6px 18px var(--shadow-color);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+
+  &:hover {
+    transform: translateY(-1px);
+    background: #474747;
+  }
+
+  svg {
+    width: 18px;
+    height: 18px;
+  }
 `;
 
 const DownloadMessage = styled.div<{ $isVisible: boolean }>`
@@ -120,8 +153,23 @@ export default function SceneItem({ scene }: SceneItemProps) {
         onClick={handleDownload}
       />
       <SceneInfo>
-        <SceneTitle>{scene.title}</SceneTitle>
-        <SceneDescription>{scene.description}</SceneDescription>
+        <SceneText>
+          <SceneTitle>{scene.title}</SceneTitle>
+          <SceneDescription>{scene.description}</SceneDescription>
+        </SceneText>
+        {scene.xPostUrl ? (
+          <ScenePostLink
+            href={scene.xPostUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={messages.sceneItem.openXPost(scene.title)}
+            title={messages.sceneItem.openXPost(scene.title)}
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+            </svg>
+          </ScenePostLink>
+        ) : null}
       </SceneInfo>
 
       <DownloadMessage $isVisible={showDownloadMessage}>
