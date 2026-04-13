@@ -10,7 +10,19 @@ export const CUSTOM_DIMENSIONS = {
   SCENE_TITLE: 'scene_title',   // シーンタイトル
   CHARACTER_ID: 'character_id', // キャラクターID
   CHARACTER_NAME: 'character_name', // キャラクター名
+  DOWNLOAD_VARIANT: 'download_variant', // original / converted
+  DOWNLOAD_TARGET: 'download_target', // original / KK / KKS / ...
 };
+
+export type CharacterDownloadVariant = 'original' | 'converted';
+export type CharacterDownloadTarget =
+  | 'original'
+  | 'KK'
+  | 'KKS'
+  | 'EC'
+  | 'HC'
+  | 'SV'
+  | 'AC';
 
 // Google Analyticsの初期化
 export const initializeGA = () => {
@@ -66,7 +78,13 @@ export const trackSceneDownload = (gameId: string, sceneId: string, sceneTitle: 
 };
 
 // キャラクターデータダウンロードイベントを送信
-export const trackCharacterDownload = (gameId: string, characterId: string, characterName: string) => {
+export const trackCharacterDownload = (
+  gameId: string,
+  characterId: string,
+  characterName: string,
+  downloadVariant: CharacterDownloadVariant,
+  downloadTarget: CharacterDownloadTarget,
+) => {
   if (!window.gtag) {
     console.warn('Google Analytics not initialized');
     return;
@@ -76,6 +94,8 @@ export const trackCharacterDownload = (gameId: string, characterId: string, char
     [CUSTOM_DIMENSIONS.GAME_ID]: gameId,
     [CUSTOM_DIMENSIONS.CHARACTER_ID]: characterId,
     [CUSTOM_DIMENSIONS.CHARACTER_NAME]: characterName,
+    [CUSTOM_DIMENSIONS.DOWNLOAD_VARIANT]: downloadVariant,
+    [CUSTOM_DIMENSIONS.DOWNLOAD_TARGET]: downloadTarget,
   });
 };
 
