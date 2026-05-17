@@ -6,6 +6,14 @@
       "description": "アイコミ向けシーン/キャラデータ",
       "scenes": [
         {
+          "id": "scene8",
+          "title": "Pictogram Protocol",
+          "description": "Kill-Comi",
+          "displayImage": "images/ac/scenes/display/pictogram-protocol.png",
+          "dataImage": "images/ac/scenes/data/pictogram-protocol.png",
+          "xPostUrl": "https://x.com/tropical_362827/status/2055958071223128154"
+        },
+        {
           "id": "scene7",
           "title": "猫コスプレ",
           "description": "NEKO",
