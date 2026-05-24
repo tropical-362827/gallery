@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import { getLocalizedGameShortTitle, useI18n } from '../i18n';
+import type { LocalePreference } from '../i18n/config';
 import { GalleryData } from '../types/gallery';
 import { fetchGalleryData, getGamesForNavigation } from '../utils/galleryData';
 
@@ -130,6 +131,16 @@ const NavLink = styled(Link) <{ $isActive: boolean }>`
   }
 `;
 
+const LocaleSelect = styled.select`
+  background: var(--surface-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+`;
+
 const MenuButton = styled.button`
   display: none;
   background: none;
@@ -143,7 +154,7 @@ const MenuButton = styled.button`
 `;
 
 export default function Header() {
-  const { locale, messages } = useI18n();
+  const { locale, localePreference, setLocalePreference, messages } = useI18n();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [galleryData, setGalleryData] = useState<GalleryData | null>(null);
   const location = useLocation();
@@ -200,6 +211,20 @@ export default function Header() {
         </LeftSection>
 
         <RightSection>
+          {import.meta.env.DEV && (
+            <LocaleSelect
+              aria-label={messages.header.languageSelectAria}
+              value={localePreference}
+              onChange={event => {
+                setLocalePreference(event.target.value as LocalePreference);
+              }}
+            >
+              <option value="auto">{messages.header.languageAuto}</option>
+              <option value="ja">{messages.header.languageJa}</option>
+              <option value="en">{messages.header.languageEn}</option>
+            </LocaleSelect>
+          )}
+
           <MenuButton onClick={toggleMenu} aria-label={messages.header.toggleMenu}>
             {isMenuOpen ? '✕' : '☰'}
           </MenuButton>

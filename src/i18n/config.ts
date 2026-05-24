@@ -34,6 +34,10 @@ export interface Messages {
   sceneItem: {
     downloadSuccess: string;
     openXPost: (sceneTitle: string) => string;
+    convertButton: (targetLabel: string) => string;
+    loadingConvert: (targetLabel: string) => string;
+    convertSuccess: (targetLabel: string) => string;
+    convertError: (targetLabel: string) => string;
   };
   characterItem: {
     loadingOriginal: string;
@@ -86,6 +90,10 @@ const JA_MESSAGES: Messages = {
   sceneItem: {
     downloadSuccess: 'シーンデータをダウンロードしました',
     openXPost: sceneTitle => `${sceneTitle} のX投稿を開く`,
+    convertButton: targetLabel => `${targetLabel}へ変換`,
+    loadingConvert: targetLabel => `${targetLabel}向けに変換中...`,
+    convertSuccess: targetLabel => `${targetLabel}向けに変換してダウンロードしました`,
+    convertError: targetLabel => `${targetLabel}への変換に失敗しました`,
   },
   characterItem: {
     loadingOriginal: 'ダウンロード中...',
@@ -138,6 +146,10 @@ const EN_MESSAGES: Messages = {
   sceneItem: {
     downloadSuccess: 'Scene data downloaded.',
     openXPost: sceneTitle => `Open the X post for ${sceneTitle}`,
+    convertButton: targetLabel => `Convert to ${targetLabel}`,
+    loadingConvert: targetLabel => `Converting for ${targetLabel}...`,
+    convertSuccess: targetLabel => `Converted for ${targetLabel} and downloaded.`,
+    convertError: targetLabel => `Failed to convert for ${targetLabel}.`,
   },
   characterItem: {
     loadingOriginal: 'Downloading...',
