@@ -6,6 +6,14 @@
       "description": "アイコミ向けシーン/キャラデータ",
       "scenes": [
         {
+          "id": "scene9",
+          "title": "夏の淡いにハイビスカス",
+          "description": "Hibiscus Between the Blues",
+          "displayImage": "images/ac/scenes/display/hibiscus-between-the-blues.png",
+          "dataImage": "images/ac/scenes/data/hibiscus-between-the-blues.png",
+          "xPostUrl": "https://x.com/tropical_362827/status/2079165917997715895"
+        },
+        {
           "id": "scene8",
           "title": "Pictogram Protocol",
           "description": "Kill-Comi",
